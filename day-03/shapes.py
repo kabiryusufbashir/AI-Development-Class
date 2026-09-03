@@ -10,4 +10,6 @@ matrix = np.array([
     [53, 20, 239, 335],
 ])
 
+print(vector.shape)
+
 print(matrix.ndim)
