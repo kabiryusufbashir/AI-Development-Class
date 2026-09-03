@@ -11,3 +11,17 @@ customers = np.array([
 X = customers[:, :3] # all rows, first three columns
 
 y = customers[:, 3] # all rows, last column
+
+# Boolean Indexing 
+amounts = np.array([
+    5000,
+    150000,
+    12000,
+    300000
+])
+
+suspicious = amounts[
+    amounts > 100000
+]
+
+print(suspicious)
