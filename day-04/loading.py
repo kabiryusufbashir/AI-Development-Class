@@ -9,6 +9,7 @@ file_path = Path(__file__).parent / "data" / "transactions.csv"
 
 df = pd.read_csv(file_path)
 
+# print(df)
 # print(df.head())  # Print the first 5 rows of the DataFrame
 # print(df.tail())  # Print the last 5 rows of the DataFrame
 # print(df.shape) # Print the number of rows and columns in the DataFrame
@@ -16,4 +17,9 @@ df = pd.read_csv(file_path)
 # print(df.dtypes)  # Print the data types of each column
 # print(df.info())  # Print a concise summary of the DataFrame   
 # print(df.describe())  # Print summary statistics for numerical columns 
-print(df)
+# print(df["amount"])
+successful = df.loc[
+    df["status"] == "successful"
+]
+
+print(successful)
