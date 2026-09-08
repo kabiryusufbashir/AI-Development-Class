@@ -1,0 +1,11 @@
+transaction_id,customer_id,transaction_type,amount,status,date,failed_attempts
+TX001,C001,Data,5000,successful,2026-08-01,0
+TX002,C002,Airtime,2000,failed,2026-08-01,2
+TX003,C001,Electricity,15000,successful,2026-08-02,0
+TX004,C003,Fund Transfer,100000,successful,2026-08-02,1
+TX005,C002,Data,,failed,2026-08-03,3
+TX006,C004,Fund Transfer,250000,successful,2026-08-03,0
+TX007,C001,Airtime,3000,successful,2026-08-04,0
+TX008,C005,Electricity,45000,pending,2026-08-04,0
+TX009,C003,Fund Transfer,100000,successful,2026-08-02,1
+TX009,C003,Fund Transfer,100000,successful,2026-08-02,1
